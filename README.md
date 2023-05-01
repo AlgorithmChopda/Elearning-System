@@ -1,6 +1,5 @@
 # Elearning-system-new
 A Complete Online Driven E-Learning Website
-Sponsored Project by Xavier School
 Features:
   1) Assignments
   2) Online Test
