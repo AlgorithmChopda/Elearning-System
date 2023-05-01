@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Sep, 2021, 1:00:57 PM
+    Author     : anubh
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: url(avatar.png) no-repeat center;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  .add-member {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    align-items: baseline;
+   
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 80px 40px 40px;
+    background: rgba(0,0,0,0.01);
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  
+  .form::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: hsla(0, 100%, 90%, 0.3);
+    transform: skewX(-26deg);
+    transform-origin: bottom left;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  
+    .form .input {
+    position: relative;
+  }
+  .form .input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+  }
+  .form .input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: .3s ease-out;
+  }
+  .form .input input:focus + label,
+  .form .input input:valid + label {
+    transform: translateY(-18px);
+    color: #783c6f;
+    font-size: .9rem;
+  }
+  .submit-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: #ff652f;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
